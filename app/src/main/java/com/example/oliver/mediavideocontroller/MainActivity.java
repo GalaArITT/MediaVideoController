@@ -14,8 +14,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final VideoView videoView = (VideoView) findViewById(R.id.videoView);
+        //m.youtube.com/watch?v=VIDEO_ID&app=m
+        //https://www.youtube.com/watch?v=aIP9GGL7cpc
+        //http://www.ebookfrenzy.com/android_book/nature.mp4
+        String url ="rtsp://r5---sn-q4flrnek.googlevideo.com/Cj0LENy73wIaNAmXcvtiGP2DaBMYDSANFC0HqglaMOCoAUIASARgxqGD17T6sN5ZigELckNMQUtCSjlWNEUM/864B95CE0F5A55DD679AD493576F60A9AE49B2A4.0D02E752FE3F3AC50C9902AC7AC549C739C0E4C5/yt6/1/video.3gp";
 
-        String url = "rtsp://r5---sn-a5meknle.googlevideo.com/Cj0LENy73wIaNAmXcvtiGP2DaBMYDSANFC36kAdaMOCoAUIASARgxqGD17T6sN5ZigELckNMQUtCSjlWNEUM/899F1E6E0F1E75CB48D4DB672DCDCAD08FB02575.0FE6220F953D25A42096A695D4643824CC95CB7F/yt6/1/video.3gp";
         videoView.setVideoURI(Uri.parse(url));
 
         MediaController mediaController = new MediaController(this);
